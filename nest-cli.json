@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/dashboard-db-user/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/dashboard-db-user/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/dashboard-db-user",
+  "projects": {
+    "dashboard-db-user": {
+      "type": "application",
+      "root": "apps/dashboard-db-user",
+      "entryFile": "main",
+      "sourceRoot": "apps/dashboard-db-user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/dashboard-db-user/tsconfig.app.json"
+      }
+    },
+    "api-auth": {
+      "type": "application",
+      "root": "apps/api-auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-auth/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "api-commons": {
+      "type": "library",
+      "root": "libs/api-commons",
+      "entryFile": "index",
+      "sourceRoot": "libs/api-commons/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/api-commons/tsconfig.lib.json"
+      }
+    },
+    "api-user": {
+      "type": "application",
+      "root": "apps/api-user",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-user/tsconfig.app.json"
+      }
+    },
+    "api-notification": {
+      "type": "application",
+      "root": "apps/api-notification",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-notification/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-notification/tsconfig.app.json"
+      }
+    },
+    "api-payment": {
+      "type": "application",
+      "root": "apps/api-payment",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-payment/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-payment/tsconfig.app.json"
+      }
+    },
+    "api-content": {
+      "type": "application",
+      "root": "apps/api-content",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-content/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-content/tsconfig.app.json"
+      }
+    }
+  }
+}

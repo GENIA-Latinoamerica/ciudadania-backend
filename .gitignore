@@ -1,0 +1,61 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# NestJS build files
+dist/
+.cache/
+out/
+
+# TypeScript compilation
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.state
+
+# Database & local storage
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.local.db
+/data/
+dump.rdb
+*.pem
+
+# VSCode & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# MacOS system files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Jest Testing
+coverage/
+*.lcov
+jest-*
